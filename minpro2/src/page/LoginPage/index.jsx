@@ -66,7 +66,7 @@ const Login = () => {
     return (
         <div>
             <Navbar/>
-            <div className="flex items-center justify-center min-h-screen bg-gray-100 px-5">
+            <div className="flex items-center justify-center min-h-screen bg-gray-100 px-5 flex-col">
                 <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md ">
                     {/* heading */}
                     <div className="space-y-2">
@@ -150,8 +150,16 @@ const Login = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            
+                <div className="text-xs text-center pt-5 text-gray-400">
+                    <h4>Gunakan data dibawah ini</h4>
+                    <p> Username: eve.holt@reqres.in</p>
+                    <p>pass: pistol</p>
+                </div>
 
+                
+            
+            </div>
             <Footer/>
         </div>  
     )

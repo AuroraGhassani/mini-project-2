@@ -35,7 +35,7 @@ const Register = () => {
         setSuccess("");
 
         try {
-            const res = await axios.post("https://reqres.in/api/login", form);
+            const res = await axios.post("https://reqres.in/api/register", form);
             console.log(res); 
 
             setSuccess("Register Success!");
@@ -66,7 +66,7 @@ const Register = () => {
     return (
         <div>
             <Navbar/>
-            <div className="flex items-center justify-center min-h-screen bg-gray-100 px-5">
+            <div className="flex items-center justify-center min-h-screen bg-gray-100 px-5 flex-col">
                 <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md">
                     {/* heading */}
                     <div className="space-y-2">
@@ -85,7 +85,7 @@ const Register = () => {
                     {/* Form */}
                     <form className="space-y-4">
                         {/* Username Input */}
-                        <div>
+                        {/* <div>
                             <label
                                 htmlFor="username"
                                 className="block text-sm font-medium text-gray-700">
@@ -100,7 +100,7 @@ const Register = () => {
                                 required
                                 onChange={handleChange} 
                             /> 
-                        </div>
+                        </div> */}
 
                         {/* Email Input */}
                         <div>
@@ -156,6 +156,12 @@ const Register = () => {
                         </button>
                     </form>
 
+                </div>
+
+                <div className="text-xs text-center pt-5 text-gray-400">
+                    <h4>Gunakan data dibawah ini</h4>
+                    <p> Username: eve.holt@reqres.in</p>
+                    <p>pass: pistol</p>
                 </div>
             </div>
 
